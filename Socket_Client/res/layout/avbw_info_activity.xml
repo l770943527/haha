@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6E6E6" >
+
+    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+		    
+    <include
+       android:id="@+id/avbw_layoutTitle_MainPage"
+       layout="@layout/task_title_panel" />
+    
+	
+    <include
+            android:id="@+id/avbw_report_form"
+            layout="@layout/avbw_report_form_item" />
+    
+     <common.WALoadListView 
+	        	android:id="@+id/avbwlist"
+        		android:layout_width="fill_parent"
+  				android:layout_height="fill_parent" 
+  				android:background="@color/common_bg"/> 
+  				
+     </LinearLayout>
+
+</RelativeLayout>

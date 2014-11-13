@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 统一的背景颜色 -->
+    <color name="common_bg">#E6E6E6</color>
+    
+    
+    
+    
+    
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ffccddff</color>
+    <color name="grey">#ff58616d</color><!-- 灰色 -->
+    <color name="darkgrey">#ff404040</color><!-- 黑灰色 -->
+    <color name="toasterro">#ff9fd524</color>
+    <color name="lightgrey">#ff888888</color><!-- 亮灰色 -->
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="ChattingSenderTextColor">#ff081c52</color>
+    <color name="ConversationVoiceTextColor">#ff339900</color>
+    <color name="navpage">#ffd1d1d1</color>
+    <color name="shake_info_text">#ffa1a1a1</color>
+    <color name="water_bule">#97CBFF</color> <!-- 水蓝色 -->
+    <color name="mediumvioletred">#C71585</color><!--中紫罗兰色 -->
+    <color name="gold">#FFD306</color>
+    
+</resources>

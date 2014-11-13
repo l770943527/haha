@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6" >
+
+    <RelativeLayout
+        android:id="@+id/setconnection_top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/common_title_bg" >
+
+	<Button 
+        android:id="@+id/back_setconnectionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12px"
+        android:background="@drawable/common_button_title_back" />
+        
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="连接设置"
+            android:textColor="#FFFFFF"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setconnection_conf_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setconnection_top_panel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:background="@drawable/setconnection_conf_bg">
+    </RelativeLayout>
+        
+    <EditText
+        android:id="@+id/setconnection_ipEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/setconnection_conf_panel"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="160px"
+        android:paddingLeft="15px"
+        android:hint="服务器ip"
+        android:textSize="24px"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:background="@drawable/setconnection_address_left_bg" />
+        
+        
+    <EditText
+        android:id="@+id/setconnection_portEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/setconnection_conf_panel"
+        android:layout_marginTop="160px"
+        android:layout_marginRight="42px"
+        android:paddingLeft="15px"
+        android:hint="端口号"
+        android:textSize="24px"
+        android:maxLength="5"
+        android:singleLine="true"
+        android:background="@drawable/setconnection_address_right_bg" />
+    
+    <Button
+        android:id="@+id/setconnection_saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248px"
+        android:layout_centerHorizontal="true"
+        android:text="保  存"
+        android:textSize="30px"
+        android:textColor="#FFFFFF"
+        android:background="@layout/common_button_green_short_bg" />
+</RelativeLayout>

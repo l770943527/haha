@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/loadlistviewheader_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingTop="@dimen/commonPadding"
+        android:paddingBottom="@dimen/commonPadding"
+        android:paddingLeft="33dp"
+        android:paddingRight="33dp"
+        android:visibility="visible" >
+        <ImageView 
+            android:id="@+id/loadlistviewheader_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:background="@drawable/waexloadlistview_down_arrow"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+            <TextView
+		        android:id="@+id/loadlistviewheader_stateTextView"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="@dimen/commonFontSizeLittle"
+		        android:gravity="center_horizontal" />	
+		     <TextView
+		         android:id="@+id/loadlistviewheader_infoTextView"
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:textSize="@dimen/commonFontSizeLittle"
+		         android:gravity="center_horizontal"
+		         android:layout_marginTop="7dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

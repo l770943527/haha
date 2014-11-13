@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+     >
+    
+    <include
+       android:id="@+id/layoutTitle_LogDetail"
+       layout="@layout/task_title_panel2" />
+
+    <ScrollView
+          android:id="@+id/reportform_LogdetailScrollView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:paddingTop="@dimen/commonPadding"
+          android:paddingBottom="@dimen/commonPadding"
+          android:layout_below="@id/layoutTitle_LogDetail" />
+
+
+</RelativeLayout>

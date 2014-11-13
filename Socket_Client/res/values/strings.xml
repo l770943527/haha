@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Socket Client!</string>
+    <string name="app_name">Socket</string>
+    <string name="Send">发送</string>
+    <string name="gridview1">结果信息</string>
+    <string name="gridview2">任务下发</string>
+    <string name="gridview3">日志管理</string>
+    <string name="gridview4">告警管理</string>
+    <string name="gridview5">用户管理</string>
+    <string name="gridview6">节点管理</string>
+    
+    <string-array name="menu_array">
+        <item >存货</item>
+        <item >单位</item>
+        <item >订单数量</item>
+        <item >订单金额</item>
+        <item >累计发货</item>
+        <item >累计出库</item>
+        <item >累计发票</item>
+        <item >累计收款</item>
+    </string-array>
+    <string name="action_search">search!!</string>
+    <string name="search_hint">search_hint!!!!!</string>
+    <string name="search_label">search_label</string>
+    <string name="settings_description">settings_description</string>
+    <string name="action_settings">action_settings</string>
+    
+</resources>
