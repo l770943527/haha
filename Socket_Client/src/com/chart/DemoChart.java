@@ -21,7 +21,7 @@ public class DemoChart{
     private XYMultipleSeriesRenderer renderer;
 
     //TimeSeries
-    TimeSeries series1;
+    TimeSeries series1;//hahah testï¼
     TimeSeries series2;
     
     public XYMultipleSeriesRenderer getRenderer() {
@@ -34,7 +34,7 @@ public class DemoChart{
         renderer=new XYMultipleSeriesRenderer();
     }
     
-    //Éú³ÉÍ¼ĞÎ
+    //ç”Ÿæˆå›¾å½¢
     public GraphicalView getChartGraphicalView(Context context){
 
     	GraphicalView tempView = ChartFactory.getTimeChartView(context, dataset, renderer,null);
@@ -50,20 +50,20 @@ public class DemoChart{
     }
     
     /*
-     * ²ÎÊıÒÀ´ÎÎª£ºÍ¼ĞÎµÄ±êÌâ£¬XÖá±êÌâ£¬YÖá±êÌâ£¬Öá±³¾°ÑÕÉ«£¬Öá×ø±êÑÕÉ«
+     * å‚æ•°ä¾æ¬¡ä¸ºï¼šå›¾å½¢çš„æ ‡é¢˜ï¼ŒXè½´æ ‡é¢˜ï¼ŒYè½´æ ‡é¢˜ï¼Œè½´èƒŒæ™¯é¢œè‰²ï¼Œè½´åæ ‡é¢œè‰²
      * */
     public void setRandererBasicProperty(String title,String xTitle,String yTitle,int axeColor,int labelColor){    
         renderer.setChartTitle(title);
         renderer.setXTitle(xTitle);
         renderer.setYTitle(yTitle);
        
-        //ÉèÖÃ¸÷ÖÖÑÕÉ«
+        //è®¾ç½®å„ç§é¢œè‰²
         renderer.setAxesColor(axeColor);
         renderer.setLabelsColor(labelColor);
-        renderer.setMarginsColor(Color.WHITE);//¿Õ°×ÑÕÉ«£¨µ×É«£©
-        renderer.setGridColor(Color.GRAY);//Íø¸ñÑÕÉ«
+        renderer.setMarginsColor(Color.WHITE);//ç©ºç™½é¢œè‰²ï¼ˆåº•è‰²ï¼‰
+        renderer.setGridColor(Color.GRAY);//ç½‘æ ¼é¢œè‰²
        
-        //ÉèÖÃÎÄ×ÖµÄÊôĞÔ
+        //è®¾ç½®æ–‡å­—çš„å±æ€§
         renderer.setXLabels(5);
         renderer.setYLabels(5);
         renderer.setXLabelsAlign(Align.RIGHT);
@@ -73,11 +73,11 @@ public class DemoChart{
         renderer.setLabelsTextSize(15);
         renderer.setLegendTextSize(15);
         
-        //ÉèÖÃÍ¼ĞÎÎ»ÖÃ£¬Ëõ·Å£¬ĞÎÌ¬
+        //è®¾ç½®å›¾å½¢ä½ç½®ï¼Œç¼©æ”¾ï¼Œå½¢æ€
         renderer.setPointSize(0);
         
-        renderer.setMargins(new int[] { 35, 35, 0, 20 });//Áô°× ÉÏ£¬×ó£¬ÏÂ£¬ÓÒ
-        renderer.setLegendHeight(41);//ÉèÖÃµ×²¿ÎÄ×ÖµÄ¸ß¶È
+        renderer.setMargins(new int[] { 35, 35, 0, 20 });//ç•™ç™½ ä¸Šï¼Œå·¦ï¼Œä¸‹ï¼Œå³
+        renderer.setLegendHeight(41);//è®¾ç½®åº•éƒ¨æ–‡å­—çš„é«˜åº¦
         renderer.setShowGrid(true);
         renderer.setZoomEnabled(true, false);
     }
@@ -120,7 +120,7 @@ public class DemoChart{
         return getChartGraphicalView(context);
     }
     
-    /*¸üĞÂÊı¾İ£¬¶ÔseriesµÄ²Ù×÷*/
+    /*æ›´æ–°æ•°æ®ï¼Œå¯¹seriesçš„æ“ä½œ*/
     public void updateData(Date date,double rate){
         series1.add(date, rate);
     }
