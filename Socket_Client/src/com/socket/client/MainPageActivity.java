@@ -28,12 +28,13 @@ import android.widget.AdapterView.OnItemClickListener;
 public class MainPageActivity extends Activity  {
 
 	private Button backBtn;
+	private Button test;
 	private TextView head;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);// Òþ²Ø±êÌâ
+		requestWindowFeature(Window.FEATURE_NO_TITLE);// Ã’Ã¾Â²Ã˜Â±ÃªÃŒÃ¢
 		setContentView(R.layout.activity_main_page_layout);
 
 		initTitle();
@@ -52,7 +53,7 @@ public class MainPageActivity extends Activity  {
 		//backBtn = (Button) findViewById(R.id.tasktitlepanel_leftBtn);
 		//backBtn.setOnClickListener(this);
 		head = (TextView) findViewById(R.id.tasktitlepanel_titleTextView);
-		head.setText("Ö÷Ò³");
+		head.setText("Ã–Ã·Ã’Â³");
 	}
 
 	private void initViews() {
